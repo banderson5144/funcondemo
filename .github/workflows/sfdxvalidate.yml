@@ -4,7 +4,8 @@ on: [push]
 
 env:
   CUMULUSCI_SERVICE_github: ${{ secrets.CUMULUSCI_SERVICE_github }}
-  CUMULUSCI_ORG_demodeploy: '${{ secrets.CUMULUSCI_ORG_DEMODEPLOY }}'
+  CUMULUSCI_SERVICE_connected_app: ${{ secrets.CUMULUSCI_CONNECTED_APP }}
+  CUMULUSCI_ORG_demodeploy: ${{ secrets.CUMULUSCI_ORG_DEMODEPLOY }}
 
 jobs:
   sfdxvalidate:
