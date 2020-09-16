@@ -1,0 +1,41 @@
+minimum_cumulusci_version: '3.18.0'
+project:
+    name: funcondemo
+    package:
+        name: funcondemo
+        api_version: '49.0'
+    git:
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/funcondemo/tests
+            options:
+                outputdir: robot/funcondemo/results
+
+    robot_testdoc:
+        options:
+            path: robot/funcondemo/tests
+            output: robot/funcondemo/doc/funcondemo_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 85
+
+    my_dx_validate:
+        description: my custom validate task
+        class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+        options:
+            command: force:source:deploy -c -p force-app
+
+flows:
+    my_deploy:
+        description: my custom deploy
+        steps:
+            0:
+                task: my_dx_validate
+#            1:
+#                task: install_sfdm
+#            2:
+#                task: run_sfdm

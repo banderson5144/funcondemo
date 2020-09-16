@@ -1,0 +1,62 @@
+{
+    "access_token": "00D4W0000048wg7!AQIAQJzu4xF0dwBIlqvfgZMyM.8mdkCKeyScqVi2zlao5i4GmZH_KCM0WW6R7FE291X3UYEDpQy3lYy106VYBKEu6APupVjj",
+    "expires": "Persistent",
+    "id": "https://login.salesforce.com/id/00D4W0000048wg7UAA/0054W00000AXzARQA1",
+    "id_token": "eyJraWQiOiIyMjYiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiN3Y1WVQ2SUx2OWdFaTg3TE5LeUZIUSIsInN1YiI6Imh0dHBzOi8vbG9naW4uc2FsZXNmb3JjZS5jb20vaWQvMDBENFcwMDAwMDQ4d2c3VUFBLzAwNTRXMDAwMDBBWHpBUlFBMSIsImF1ZCI6IjNNVkc5OU94VHlFTUNRM2h4c1ZuWEpCMGtZSUt1Ym1JZmxHWmNGbEMuV21jRWlsaENGTXM0Zmp6VGRRNzA0RDVoZHoxRFBTQ3hiN3VMQ28yakRma0QiLCJpc3MiOiJodHRwczovL2xvZ2luLnNhbGVzZm9yY2UuY29tIiwiZXhwIjoxNjAwMjAyMzY5LCJpYXQiOjE2MDAyMDIyNDl9.WxzIXiav2ywOGdMFLG5k6NR2Q0PSC4WP33QMIhUjw552pM225Cx9Uo5o0wZh-sh0zmI_Nm5BuoFAAxddrB8MKhHe54GsEq1j16u5j8aG6sLVBf5kkmXmtPZiiioKoVJOFrhuQPWVA2rBLB5_o13QKNRtMzMyJr1o8SEEC94DROw83C5ZQ8DrjUjF27_H_mXwiw9NElJ3giEIzKiuEcsVvAagm9Glxha3-BwN6ROx24_xwto3IYw7WCPEe_aLyPDd_T5CYe6kMWCWQ9sVn3eahmSKnFzMoE8YijzysnICIS1Bf_jshgyn_xP9a3S8QouCjki42YsRk7Yovd9voClpc5sLNrUTb6g_lt_yW5I0QE_devc98JiXxhhuCvuJyR1g3z440Y29-mNy1DFlnlqwTvOEy2-NBQhGyDn7Z_KIWNczEcnYjbPjuSkmofAXWoV8oV-RuLSqlLzK1wgwCbRhd-TSKsYhPNg4jYBqDHhLPJNXtKv3mw5KrwdZbDMJ0C8DCDHZ7DhoQXiRZ86g0_abxqz931pdK9cg9e9RPk8PDNawGmFrwbHkAnp_yvJjWAhsIhmwTglrZWDw4lB4BNhCM3hNrdpN6VMaYbbiiv88Z5SB618AXFtxcx8Kc7lMLSPgR9JV3debFlrXzU9PXVopOQHMzcUf-1iKnOZhn3AFGCY",
+    "instance_name": "NA139",
+    "instance_url": "https://bandy-funcon-dev-ed.my.salesforce.com",
+    "is_sandbox": false,
+    "issued_at": "1600220186780",
+    "org_type": "Developer Edition",
+    "refresh_token": "5Aep861d1G_LVSxTq2JvwNue3IeSVzfH4468J4SNCBqODwaDNfXsqUFq5R.Umtk_rZ.mlyHIrf5hjlPlETv9eS7",
+    "scope": "refresh_token web full",
+    "signature": "AGmY/kqaEIc49pgYkAULns4YCd8Hhe9bHB6o3yA1ZR8=",
+    "token_type": "Bearer",
+    "userinfo": {
+        "active": true,
+        "address": {
+            "country": "US"
+        },
+        "email": "banderson5144@gmail.com",
+        "email_verified": true,
+        "family_name": "Anderson",
+        "given_name": "Bryan",
+        "language": "en_US",
+        "locale": "en_US",
+        "name": "Bryan Anderson",
+        "nickname": "bandy",
+        "organization_id": "00D4W0000048wg7UAA",
+        "photos": {
+            "picture": "https://bandy-funcon-dev-ed--c.documentforce.com/profilephoto/005/F",
+            "thumbnail": "https://bandy-funcon-dev-ed--c.documentforce.com/profilephoto/005/T"
+        },
+        "picture": "https://bandy-funcon-dev-ed--c.documentforce.com/profilephoto/005/F",
+        "preferred_username": "bandy@funcondemo.com",
+        "profile": "https://bandy-funcon-dev-ed.my.salesforce.com/0054W00000AXzARQA1",
+        "sub": "https://login.salesforce.com/id/00D4W0000048wg7UAA/0054W00000AXzARQA1",
+        "updated_at": "2020-09-15T15:54:16Z",
+        "urls": {
+            "custom_domain": "https://bandy-funcon-dev-ed.my.salesforce.com",
+            "enterprise": "https://bandy-funcon-dev-ed.my.salesforce.com/services/Soap/c/{version}/00D4W0000048wg7",
+            "feed_elements": "https://bandy-funcon-dev-ed.my.salesforce.com/services/data/v{version}/chatter/feed-elements",
+            "feed_items": "https://bandy-funcon-dev-ed.my.salesforce.com/services/data/v{version}/chatter/feed-items",
+            "feeds": "https://bandy-funcon-dev-ed.my.salesforce.com/services/data/v{version}/chatter/feeds",
+            "groups": "https://bandy-funcon-dev-ed.my.salesforce.com/services/data/v{version}/chatter/groups",
+            "metadata": "https://bandy-funcon-dev-ed.my.salesforce.com/services/Soap/m/{version}/00D4W0000048wg7",
+            "partner": "https://bandy-funcon-dev-ed.my.salesforce.com/services/Soap/u/{version}/00D4W0000048wg7",
+            "profile": "https://bandy-funcon-dev-ed.my.salesforce.com/0054W00000AXzARQA1",
+            "query": "https://bandy-funcon-dev-ed.my.salesforce.com/services/data/v{version}/query/",
+            "recent": "https://bandy-funcon-dev-ed.my.salesforce.com/services/data/v{version}/recent/",
+            "rest": "https://bandy-funcon-dev-ed.my.salesforce.com/services/data/v{version}/",
+            "search": "https://bandy-funcon-dev-ed.my.salesforce.com/services/data/v{version}/search/",
+            "sobjects": "https://bandy-funcon-dev-ed.my.salesforce.com/services/data/v{version}/sobjects/",
+            "tooling_rest": "https://bandy-funcon-dev-ed.my.salesforce.com/services/data/v{version}/tooling/",
+            "tooling_soap": "https://bandy-funcon-dev-ed.my.salesforce.com/services/Soap/T/{version}/00D4W0000048wg7",
+            "users": "https://bandy-funcon-dev-ed.my.salesforce.com/services/data/v{version}/chatter/users"
+        },
+        "user_id": "0054W00000AXzARQA1",
+        "user_type": "STANDARD",
+        "utcOffset": -28800000,
+        "zoneinfo": "America/Los_Angeles"
+    }
+}
