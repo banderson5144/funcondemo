@@ -21,6 +21,6 @@ public with sharing class DemoClass
     @AuraEnabled
     public static String helloWorld(String name)
     {
-        return 'Hello Apex '+name; 
+        return ' Apex '+name; 
     }
 }
