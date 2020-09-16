@@ -33,7 +33,7 @@ tasks:
         description: Run Salesforce Data mover
         class_path: cumulusci.tasks.command.Command
         options:
-            command: sfdx sfdmu:run --path sfdmu\Account --targetusername bandy@funcondemo.com --sourceusername csvfile
+            command: sfdx sfdmu:run --path sfdmu/Account --targetusername bandy@funcondemo.com --sourceusername csvfile
 
     my_dx_validate:
         description: my custom validate task
