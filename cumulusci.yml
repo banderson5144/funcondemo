@@ -41,12 +41,18 @@ tasks:
         options:
             command: force:source:deploy -c -p force-app
 
+    my_dx_deploy:
+        description: my custom validate task
+        class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+        options:
+            command: force:source:deploy -p force-app
+
 flows:
     my_deploy:
         description: my custom deploy
         steps:
             0:
-                task: my_dx_validate
+                task: my_dx_deploy
             1:
                 task: install_sfdm
             2:
