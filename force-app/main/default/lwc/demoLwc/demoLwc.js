@@ -4,7 +4,7 @@ import helloWorld from '@salesforce/apex/DemoClass.helloWorld';
 export default class DemoLwc extends LightningElement
 {
     @api demoProp;
-    greeting = 'foo';
+    greeting = 'Insert Name';
 
     handleChange(event)
     {
