@@ -13,9 +13,9 @@ export default class DemoLwc extends LightningElement
 
     callApex()
     {
-        helloWorld({ searchKey: 'foo' })
+        helloWorld({ name: 'Bryan Anderson' })
         .then((result) => {
-            this.greeting='barApex';
+            this.greeting=result;
         })
         .catch((error) => {
             //TODO
