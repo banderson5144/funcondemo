@@ -23,6 +23,18 @@ tasks:
         options:
             required_org_code_coverage_percent: 85
 
+    install_sfdm:
+        description: Install Salesforce Data mover
+        class_path: cumulusci.tasks.command.Command
+        options:
+            command: echo y | sfdx plugins:install sfdmu --force
+
+    run_sfdm:
+        description: Run Salesforce Data mover
+        class_path: cumulusci.tasks.command.Command
+        options:
+            command: sfdx sfdmu:run --path sfdmu\Account --targetusername bandy@funcondemo.com --sourceusername csvfile
+
     my_dx_validate:
         description: my custom validate task
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
@@ -35,7 +47,7 @@ flows:
         steps:
             0:
                 task: my_dx_validate
-#            1:
-#                task: install_sfdm
-#            2:
-#                task: run_sfdm
+            1:
+                task: install_sfdm
+            2:
+                task: run_sfdm

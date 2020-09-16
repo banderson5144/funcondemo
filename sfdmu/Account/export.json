@@ -1,0 +1,10 @@
+{
+  "createTargetCSVFiles": false,
+  "promptOnMissingParentObjects": false,
+  "objects": [
+    {
+      "query": "SELECT Id FROM Account",
+      "operation": "Readonly"
+    }
+  ]
+}
