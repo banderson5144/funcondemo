@@ -23,7 +23,7 @@ jobs:
         echo ${{ secrets.SFDX_AUTH_URL }} > sfdx_auth
         sfdx force:auth:sfdxurl:store -f sfdx_auth -s
     - name: Validate Source
-      run: sfdx force:source:deploy -c -l RunLocalTests -p force-app
+      run: sfdx force:source:deploy -c -p force-app
     # - name: Set up Python
     #   uses: actions/setup-python@v1
     #   with:
