@@ -17,16 +17,20 @@ jobs:
     env:
       CUMULUSCI_KEYCHAIN_CLASS: cumulusci.core.keychain.EnvironmentProjectKeychain
     steps:
-    - uses: actions/checkout@v2
-    - name: Install sfdx
-      run: |
-        mkdir sfdx
-        wget -qO- https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz | tar xJ -C sfdx --strip-components 1
-        ./sfdx/install
-        echo "$SFDX_JWT_KEY" > jwt.key
-        sfdx force:auth:jwt:grant --jwtkeyfile jwt.key --username $SFDX_USERNAME --clientid $SFDX_CLIENTID -s
-        # echo ${{ secrets.SFDX_AUTH_URL }} > sfdx_auth
-        # sfdx force:auth:sfdxurl:store -f sfdx_auth -s
+    # Checks out a copy of your repository on the ubuntu-latest machine
+    - name: Checkout code
+      uses: actions/checkout@v2
+    # - uses: actions/checkout@v2
+    uses: docker://salesforce/salesforcedx:latest
+    # - name: Install sfdx
+    #   run: |
+    #     mkdir sfdx
+    #     wget -qO- https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz | tar xJ -C sfdx --strip-components 1
+    #     ./sfdx/install
+    #     echo "$SFDX_JWT_KEY" > jwt.key
+    #     sfdx force:auth:jwt:grant --jwtkeyfile jwt.key --username $SFDX_USERNAME --clientid $SFDX_CLIENTID -s
+    #     # echo ${{ secrets.SFDX_AUTH_URL }} > sfdx_auth
+    #     # sfdx force:auth:sfdxurl:store -f sfdx_auth -s
     - name: Validate Source
       run: sfdx force:source:deploy -c -p force-app
     # - name: Set up Python
