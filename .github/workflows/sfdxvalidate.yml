@@ -30,8 +30,8 @@ jobs:
         # ./sfdx/install
         echo "$SFDX_JWT_KEY" > jwt.key
         sfdx force:auth:jwt:grant --jwtkeyfile jwt.key --username $SFDX_USERNAME --clientid $SFDX_CLIENTID -s
-        echo ${{ secrets.SFDX_AUTH_URL }} > sfdx_auth
-        sfdx force:auth:sfdxurl:store -f sfdx_auth -s
+        # echo ${{ secrets.SFDX_AUTH_URL }} > sfdx_auth
+        # sfdx force:auth:sfdxurl:store -f sfdx_auth -s
     - name: Validate Source
       run: sfdx force:source:deploy -c -p force-app
     # - name: Set up Python
