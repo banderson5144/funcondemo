@@ -22,8 +22,8 @@ jobs:
         mkdir sfdx
         wget -qO- https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz | tar xJ -C sfdx --strip-components 1
         ./sfdx/install
-        echo ${{ secrets.SFDX_JWT_KEY }} > sfdx_key
-        sfdx force:auth:jwt:grant --jwtkeyfile sfdx_key --username $SFDX_USERNAME --clientid $SFDX_CLIENTID
+        echo ${{ secrets.SFDX_JWT_KEY }} > jwt.key
+        sfdx force:auth:jwt:grant --jwtkeyfile jwt.key --username $SFDX_USERNAME --clientid $SFDX_CLIENTID
         # echo ${{ secrets.SFDX_AUTH_URL }} > sfdx_auth
         # sfdx force:auth:sfdxurl:store -f sfdx_auth -s
     - name: Validate Source
