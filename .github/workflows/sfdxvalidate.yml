@@ -14,6 +14,8 @@ jobs:
   sfdxvalidate:
     name: "Run SFDX Validate"
     runs-on: ubuntu-latest
+    container:
+      image: salesforce/salesforcedx:latest
     env:
       CUMULUSCI_KEYCHAIN_CLASS: cumulusci.core.keychain.EnvironmentProjectKeychain
     steps:
@@ -21,7 +23,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     # - uses: actions/checkout@v2
-    - uses: docker://salesforce/salesforcedx:latest
     # - name: Install sfdx
     #   run: |
     #     mkdir sfdx
