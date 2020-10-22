@@ -2,7 +2,7 @@
  * @description       : This is demo class to show DevOps flow
  * @author            : Bryan Anderson
  * @group             : 
- * @last modified on  : 09-16-2020
+ * @last modified on  : 10-21-2020
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
  * Modifications Log 
  * Ver   Date         Author           Modification
@@ -21,6 +21,6 @@ public with sharing class DemoClass
     @AuraEnabled
     public static String helloWorld(String name)
     {
-        return ' Apex '+name; 
+        return ' Apex Hello '+name; 
     }
 }
