@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: salesforce/salesforcedx:latest
-    env:
-      CUMULUSCI_KEYCHAIN_CLASS: cumulusci.core.keychain.EnvironmentProjectKeychain
+    # env:
+    #   CUMULUSCI_KEYCHAIN_CLASS: cumulusci.core.keychain.EnvironmentProjectKeychain
     steps:
     # Checks out a copy of your repository on the ubuntu-latest machine
     - name: Checkout code
