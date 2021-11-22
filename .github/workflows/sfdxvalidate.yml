@@ -15,7 +15,7 @@ jobs:
     name: "Run SFDX Validate"
     runs-on: ubuntu-latest
     container:
-      image: salesforce/salesforcedx:latest
+      image: salesforce/salesforcedx:latest-full
     # env:
     #   CUMULUSCI_KEYCHAIN_CLASS: cumulusci.core.keychain.EnvironmentProjectKeychain
     steps:
