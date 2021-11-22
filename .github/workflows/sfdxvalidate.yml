@@ -35,7 +35,7 @@ jobs:
     - name: Validate Source
       run: sfdx force:source:deploy -c -p force-app
     - name: Backup Org
-      run: curl --location --request POST "https://app1.ownbackup.com/api/v1/services/54955/backup_now" --header "X-SESSION-ID: ec815a2ca35bf9611b851a9a600f51d2" --header "Cookie: _session_id=ec815a2ca35bf9611b851a9a600f51d2"
+      run: curl --location --request POST "https://app1.ownbackup.com/api/v1/services/54955/backup_now" --header "X-SESSION-ID:ec815a2ca35bf9611b851a9a600f51d2" --header "Cookie:_session_id=ec815a2ca35bf9611b851a9a600f51d2"
     # - name: Set up Python
     #   uses: actions/setup-python@v1
     #   with:
