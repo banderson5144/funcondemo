@@ -15,7 +15,7 @@ public with sharing class DemoClass
     /**
     * @description 
     * @author Bryan Anderson | 09-15-2020 
-    * @param name String to be passed through
+    * @param name String to be passeed through
     * @return A concatenated string with Hello {name}
     **/
     @AuraEnabled
